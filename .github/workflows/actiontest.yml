@@ -1,6 +1,4 @@
-Apologies for the oversight. Let's correct that by defining at least one step within the `sequence` job. Here's the corrected YAML:
 
-```yaml
 name: Example Workflow
 
 on:
