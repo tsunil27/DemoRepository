@@ -1,3 +1,6 @@
+Apologies for the oversight. Let's correct that by defining at least one step within the `sequence` job. Here's the corrected YAML:
+
+```yaml
 name: Example Workflow
 
 on:
@@ -43,7 +46,9 @@ jobs:
 
   sequence:
     runs-on: ubuntu-latest
-    steps: []
+    steps:
+      - name: Placeholder Step
+        run: echo "This is a placeholder step"
 
   run_python:
     runs-on: ubuntu-latest
@@ -56,3 +61,6 @@ jobs:
 
       - name: Run Python script
         run: python script.py
+```
+
+In the `sequence` job, I've added a placeholder step with a name and a simple command (`echo`) to ensure there's at least one step defined, resolving the error message. Now the YAML should validate properly.
